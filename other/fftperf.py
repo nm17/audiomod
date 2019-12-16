@@ -3,7 +3,7 @@ import perfplot
 import scipy.fftpack
 import pyfftw
 
-#numpy.use_fastnumpy = True
+# numpy.use_fastnumpy = True
 
 perfplot.save(
     "rfftperf.png",
