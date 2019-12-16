@@ -29,5 +29,5 @@ class Modulation(ABC):
             if button_pressed:
                 self.__state["toggle"] ^= True
             if len(self.__state["text"].value) > 0:
-                bimpy.image("Graph", self.encode(self.__state["text"].value.encode()))
+                bimpy.plot_lines("Graph", self.encode(self.__state["text"].value.encode()))
         bimpy.end()
